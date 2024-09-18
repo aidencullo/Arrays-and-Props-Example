@@ -1,19 +1,10 @@
 import { people } from './data.js';
 import { getImageUrl } from './utils.js';
+import Person from './Person.js';
 
 export default function List() {
   const listItems = people.map(person =>
-    <li key={person.id}>
-      <img
-        src={getImageUrl(person)}
-        alt={person.name}
-      />
-      <p>
-        <b>{person.name}</b>
-          {' ' + person.profession + ' '}
-          known for {person.accomplishment}
-      </p>
-    </li>
+      <Person person="person" />
   );
   return <ul>{listItems}</ul>;
 }
