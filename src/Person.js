@@ -1,3 +1,5 @@
+import { getImageUrl } from './utils.js';
+
 export default function Person({ person }) {
   return (
     <li key={person.id}>

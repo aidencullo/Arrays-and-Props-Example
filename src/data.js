@@ -28,4 +28,10 @@ export const people = [{
   profession: 'astrophysicist',
   accomplishment: 'white dwarf star mass calculations',
   imageId: 'lrWQx8l'
+}, {
+  id: 5, // Used in JSX as a key
+  name: 'Vera Rubin',
+  profession: 'astronomer',
+  accomplishment: 'dark matter discovery',
+  imageId: 'bE7W1ji'
 }];
